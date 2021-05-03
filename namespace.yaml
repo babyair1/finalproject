@@ -1,0 +1,24 @@
+# resource "kubernetes_namespace" "project-namespace" {
+#   metadata {
+#     name = "project-akhir-namespace"
+#   }
+# }
+
+# resource "kubernetes_namespace" "project-akhir" {
+#   metadata {
+#     annotations = {
+#       name = "project-annotation"
+#     }
+
+#     labels = {
+#       mylabel = "label-project-akhir"
+#     }
+
+#     name = "project-akhir-namespace"
+#   }
+# }
+
+# apiVersion: v1
+# kind: Namespace
+# metadata:
+#   name: project-akhir

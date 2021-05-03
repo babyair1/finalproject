@@ -1,0 +1,13 @@
+- hosts: jenkins
+  become: true
+  ignore_unreachable: true
+  
+  vars:
+    java_packages:
+      - openjdk-8-jdk
+
+  roles:
+    - role: geerlingguy.java
+    - role: geerlingguy.jenkins
+    - role: geerlingguy.nodejs
+    - role: geerlingguy.docker
